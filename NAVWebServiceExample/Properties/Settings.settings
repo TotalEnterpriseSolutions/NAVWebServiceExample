@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NAVWebServiceExample.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NAVWebServiceExample_ws_Inbound_Transactions_ws_Inbound_Transactions_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://lapt-10137.tes.local:7707/DynamicsNAV110/WS/CRONUS%20UK%20Ltd./Page/ws_Inbound_Transactions</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

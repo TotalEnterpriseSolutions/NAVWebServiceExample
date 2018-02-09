@@ -1,0 +1,90 @@
+OBJECT Table 99000 Inbound Transactions
+{
+  OBJECT-PROPERTIES
+  {
+    Date=09/02/18;
+    Time=14:23:01;
+    Modified=Yes;
+    Version List=NAVWebServiceExample;
+  }
+  PROPERTIES
+  {
+  }
+  FIELDS
+  {
+    { 1   ;   ;ID                  ;Integer       ;AutoIncrement=Yes }
+    { 2   ;   ;ExampleBoolean      ;Boolean        }
+    { 3   ;   ;ExampleDate         ;Date           }
+    { 4   ;   ;ExampleDecimal      ;Decimal        }
+    { 5   ;   ;ExampleInteger      ;Integer        }
+    { 6   ;   ;ExampleEnum         ;Option        ;OptionString=Enum0,Enum1,Enum2 }
+    { 7   ;   ;ExampleString       ;Text250        }
+  }
+  KEYS
+  {
+    {    ;ID                                      ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
+OBJECT Page 99000 ws_Inbound_Transactions
+{
+  OBJECT-PROPERTIES
+  {
+    Date=09/02/18;
+    Time=14:23:51;
+    Modified=Yes;
+    Version List=NAVWebServiceExample;
+  }
+  PROPERTIES
+  {
+    SourceTable=Table99000;
+    PageType=List;
+  }
+  CONTROLS
+  {
+    { 1000000000;0;Container;
+                ContainerType=ContentArea }
+
+    { 1000000001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1000000002;2;Field  ;
+                SourceExpr=ID }
+
+    { 1000000003;2;Field  ;
+                SourceExpr=ExampleBoolean }
+
+    { 1000000004;2;Field  ;
+                SourceExpr=ExampleDate }
+
+    { 1000000005;2;Field  ;
+                SourceExpr=ExampleDecimal }
+
+    { 1000000006;2;Field  ;
+                SourceExpr=ExampleInteger }
+
+    { 1000000007;2;Field  ;
+                SourceExpr=ExampleEnum }
+
+    { 1000000008;2;Field  ;
+                SourceExpr=ExampleString }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+
